@@ -1,0 +1,48 @@
+/* Additional global styles */
+.recharts-wrapper .recharts-cartesian-grid-horizontal line,
+.recharts-wrapper .recharts-cartesian-grid-vertical line {
+  @apply stroke-gray-300 dark:stroke-gray-700;
+}
+
+.recharts-wrapper .recharts-cartesian-axis-line {
+  @apply stroke-gray-400 dark:stroke-gray-600;
+}
+
+.recharts-wrapper .recharts-cartesian-axis-tick-line {
+  @apply stroke-gray-400 dark:stroke-gray-600;
+}
+
+.recharts-wrapper .recharts-cartesian-axis-tick-value {
+  @apply fill-gray-600 dark:fill-gray-400 text-xs;
+}
+
+.recharts-wrapper .recharts-tooltip-wrapper {
+  @apply !shadow-lg;
+}
+
+.recharts-wrapper .recharts-default-tooltip {
+  @apply !bg-white dark:!bg-gray-800 !border-gray-200 dark:!border-gray-700 !shadow-lg !px-3 !py-2;
+}
+
+.recharts-wrapper .recharts-tooltip-label {
+  @apply !text-gray-700 dark:!text-gray-300 !font-medium;
+}
+
+.recharts-wrapper .recharts-tooltip-item {
+  @apply !text-gray-600 dark:!text-gray-400;
+}
+
+/* Print styles */
+@media print {
+  body {
+    @apply bg-white text-black;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .card {
+    @apply shadow-none border border-gray-300;
+  }
+}
