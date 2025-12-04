@@ -21,7 +21,7 @@ const BudgetOverview: React.FC<BudgetOverviewProps> = ({ budget, onEdit }) => {
   const sortedCategories = [...categories].sort((a, b) => b.percentage - a.percentage);
 
   return (
-    <Card>
+    <Card className="pb-6">
       <CardHeader className="flex flex-row items-center justify-between">
         <div>
           <CardTitle>{getMonthNameFromString(month)} Budget</CardTitle>

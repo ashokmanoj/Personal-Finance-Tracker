@@ -22,7 +22,7 @@ const BudgetList: React.FC<BudgetListProps> = ({
   const sortedBudgets = [...budgets].sort((a, b) => b.month.localeCompare(a.month));
 
   return (
-    <Card>
+    <Card className='pb-4'>
       <CardHeader>
         <CardTitle>Your Budgets</CardTitle>
       </CardHeader>

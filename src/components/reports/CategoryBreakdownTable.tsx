@@ -20,7 +20,7 @@ const CategoryBreakdownTable: React.FC<CategoryBreakdownTableProps> = ({
   const total = categories.reduce((sum, category) => sum + category.amount, 0);
 
   return (
-    <Card>
+    <Card className='pb-7'>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
