@@ -23,7 +23,7 @@ const MonthlyTrendsChart: React.FC<MonthlyTrendsChartProps> = ({ data }) => {
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white dark:bg-gray-800 p-3 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg">
+        <div className="bg-yellow-100 dark:bg-gray-800 p-3 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg">
           <p className="font-medium">{label}</p>
           {payload.map((entry: any, index: number) => (
             <p key={`item-${index}`} style={{ color: entry.color }}>
@@ -44,13 +44,13 @@ const MonthlyTrendsChart: React.FC<MonthlyTrendsChartProps> = ({ data }) => {
       <CardContent>
         <div className="h-80">
           {chartData.length > 0 ? (
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="80%" height="100%" >
               <BarChart
                 data={chartData}
                 margin={{
                   top: 20,
-                  right: 30,
-                  left: 20,
+                  right: 10,
+                  left: 10,
                   bottom: 5,
                 }}
               >
@@ -61,9 +61,9 @@ const MonthlyTrendsChart: React.FC<MonthlyTrendsChartProps> = ({ data }) => {
                 />
                 <Tooltip content={<CustomTooltip />} />
                 <Legend />
-                <Bar dataKey="Income" fill="#4CAF50" />
-                <Bar dataKey="Expenses" fill="#F44336" />
-                <Bar dataKey="Balance" fill="#2196F3" />
+                <Bar dataKey="Income" fill="#4CAF50" barSize={80}  />
+                <Bar dataKey="Expenses" fill="#F44336" barSize={80} />
+                <Bar dataKey="Balance" fill="#2196F3" barSize={80}/>
               </BarChart>
             </ResponsiveContainer>
           ) : (

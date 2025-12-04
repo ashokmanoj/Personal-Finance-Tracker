@@ -1,5 +1,5 @@
 // Format currency amount
-export const formatCurrency = (amount: number, currency = 'USD'): string => {
+export const formatCurrency = (amount: number, currency = 'INR'): string => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency,
@@ -50,7 +50,7 @@ export const truncateText = (text: string, maxLength: number): string => {
 // Convert camelCase or snake_case to Title Case
 export const toTitleCase = (str: string): string => {
   // Handle camelCase
-  const fromCamelCase = str.replace(/([A-Z])/g, ' $1');
+  const fromCamelCase = str.replace(/([A-Z])/g, ' ₹1');
   
   // Handle snake_case
   const fromSnakeCase = fromCamelCase.replace(/_/g, ' ');

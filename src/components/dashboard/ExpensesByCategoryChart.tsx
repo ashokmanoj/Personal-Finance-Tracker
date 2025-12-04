@@ -67,8 +67,8 @@ const ExpensesByCategoryChart: React.FC<ExpensesByCategoryChartProps> = ({ data 
                   cx="50%"
                   cy="50%"
                   labelLine={false}
-                  outerRadius={80}
-                  innerRadius={40}
+                  outerRadius={150}
+                  innerRadius={50}
                   dataKey="amount"
                   nameKey="category"
                 >
