@@ -38,7 +38,7 @@ const CategoryBreakdownTable: React.FC<CategoryBreakdownTableProps> = ({
               <tbody>
                 {sortedCategories.map((category, index) => (
                   <tr 
-                    key={category.category}
+                    key={index}
                     className="border-b border-gray-100 dark:border-gray-800"
                   >
                     <td className="py-3 text-sm">
@@ -60,6 +60,7 @@ const CategoryBreakdownTable: React.FC<CategoryBreakdownTableProps> = ({
                     </td>
                   </tr>
                 ))}
+                {/* <hr className='w-full  border-gray-200 dark:border-gray-700'/> */}
                 <tr className="font-medium">
                   <td className="py-3 text-sm text-gray-900 dark:text-white">Total</td>
                   <td className="py-3 text-sm text-gray-900 dark:text-white">

@@ -65,20 +65,20 @@ const IncomeVsExpensesChart: React.FC<IncomeVsExpensesChartProps> = ({ data }) =
                   type="monotone" 
                   dataKey="Income" 
                   stroke="#4CAF50" 
-                  strokeWidth={2}
+                  strokeWidth={8}
                   activeDot={{ r: 8 }}
                 />
                 <Line 
                   type="monotone" 
                   dataKey="Expenses" 
                   stroke="#F44336" 
-                  strokeWidth={2}
+                  strokeWidth={6}
                 />
                 <Line 
                   type="monotone" 
                   dataKey="Balance" 
                   stroke="#2196F3" 
-                  strokeWidth={2}
+                  strokeWidth={4}
                   strokeDasharray="5 5"
                 />
               </LineChart>

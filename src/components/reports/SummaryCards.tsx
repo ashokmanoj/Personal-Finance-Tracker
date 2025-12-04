@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
+import { TrendingUp, TrendingDown, DollarSign, IndianRupee } from 'lucide-react';
 import { Card, CardContent } from '../ui/Card';
 import { formatCurrency } from '../../utils/formatUtils';
 
@@ -130,7 +130,7 @@ const SummaryCards: React.FC<SummaryCardsProps> = ({
             </div>
             
             <div className="p-3 bg-info/10 rounded-full">
-              <DollarSign size={24} className="text-info" />
+              <IndianRupee size={24} className="text-info" />
             </div>
           </div>
         </CardContent>
