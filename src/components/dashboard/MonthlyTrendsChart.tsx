@@ -61,9 +61,9 @@ const MonthlyTrendsChart: React.FC<MonthlyTrendsChartProps> = ({ data }) => {
                 />
                 <Tooltip content={<CustomTooltip />} />
                 <Legend />
-                <Bar dataKey="Income" fill="#4CAF50" barSize={80}  />
-                <Bar dataKey="Expenses" fill="#F44336" barSize={80} />
-                <Bar dataKey="Balance" fill="#2196F3" barSize={80}/>
+                <Bar dataKey="Income" fill="#4CAF50"  />
+                <Bar dataKey="Expenses" fill="#F44336"  />
+                <Bar dataKey="Balance" fill="#2196F3" />
               </BarChart>
             </ResponsiveContainer>
           ) : (
