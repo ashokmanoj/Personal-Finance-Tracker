@@ -7,6 +7,7 @@ import App from './App';
 import './styles/index.css';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { TransactionsProvider } from './contexts/TransactionsContext';
+import { RemainingBudgetProvider } from './contexts/RemainBudget';
 
 // Create a client for React Query
 const queryClient = new QueryClient({
@@ -26,7 +27,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <BrowserRouter>
         <ThemeProvider>
           <TransactionsProvider>
+            <RemainingBudgetProvider>
             <App />
+            </RemainingBudgetProvider>
           </TransactionsProvider>
         </ThemeProvider>
       </BrowserRouter>
